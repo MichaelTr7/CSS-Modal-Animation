@@ -1,5 +1,5 @@
 # [CSS-Modal-Animation](https://michaeltr7.github.io/CSS-Modal-Animation/)
-<h3>A JavaScript triggered modal that slides in and out of the page. Notification like modal.</h3>
+A JavaScript triggered modal that slides in and out of the page. Notification like modal. Click image/GIF to view code and interactive demo.
 
 <p align="center">
   <a href="https://michaeltr7.github.io/CSS-Modal-Animation/">
