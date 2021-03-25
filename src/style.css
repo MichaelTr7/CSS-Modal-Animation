@@ -1,0 +1,148 @@
+body{
+  background-color: rgb(35,35,35);
+  margin: 0;
+}
+
+:root{
+  --Size: 6.5rem;
+}
+
+#Big_Button{
+  position: absolute;
+  height: var(--Size);
+  width: var(--Size);
+  top: 5rem;
+  left: calc(25% - var(--Size)/2);
+  background-color: rgb(52,235,192);
+  border: none;
+  border-radius: 1rem;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgba(0,0,0,0.5);
+  box-shadow: inset 1px 1px 2px 0px rgba(255,255,255,0.9);
+  transition: 0.2s;
+}
+
+#Big_Button:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+#Big_Button.Light_Up{
+  color: white;
+}
+
+#Modal{
+  position: absolute;
+  --Height: 10rem;
+  --Width: 18rem;
+  top: calc(-1*var(--Height));
+  left: calc((25% + var(--Size)/2 + 100%)/2 - var(--Width)/2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--Height);
+  width: var(--Width);
+  background-color: gray;
+  border-radius: 1rem;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgba(0,0,0,0.5);
+  box-shadow: inset 1px 1px 2px 0px rgba(255,255,255,0.35);
+}
+
+.Slide_Up_Animation{
+  animation: Slide_Modal_Keyframes 0.3s ease forwards;
+  animation-direction: reverse;
+}
+
+.Slide_Down_Animation{
+  animation: Slide_Modal_Keyframes 0.3s ease forwards;
+  animation-direction: normal;
+}
+
+@keyframes Slide_Modal_Keyframes {
+  0%{transform: translateY(0px); opacity: 0;}
+  50%{transform: translateY(15rem) scaleX(1.2); opacity: 0.7;}
+  100%{transform: translateY(13.5rem) scaleX(1); opacity: 1;}
+}
+
+#Code_Container{
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3,1fr);
+  position: absolute;
+  top: 16rem;
+  width: 100%;
+}
+
+.Labels{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: calc(50% - 50rem/2);
+  height: 2rem;
+  width: 50rem;
+  color: rgba(255,255,255,0.8);
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.7rem;
+  z-index: 2;
+}
+
+#HTML_Label{
+  top: 268px;
+}
+
+#CSS_Label{
+  top: 702px;
+}
+
+#JS_Label{
+  top: 2096px;
+}
+
+#Title{
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+iframe{
+  resize: none;
+  
+}
+
+
+/*Disabling highlighting on tap throughout application*/
+*{
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+  -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
+  outline: none !important;
+}
+
+/*Disabling drag on all buttons*/
+button{
+  -webkit-app-region: no-drag;
+}
+
+/*Disabling highlighting/copying across panel*/
+*, *::after, *::before{
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  cursor: default;
+}
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Modal Animation</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <script type="text/javascript" src="./src/index.js"></script>
+  </head>
+  
+  <body>  
+    <div id="Title">CSS Modal Animation</div>
+    <button id="Big_Button" type="button" name="button">Press<br>Button</button>    
+    <div id="Modal">Modal</div>
+          <div id="HTML_Label" class="Labels">HTML (Hypertext Markup Language)</div>
+          <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%2835%2C35%2C35%2C1%29&t=shades-of-purple&wt=none&l=htmlmixed&ds=true&dsyoff=6px&dsblur=10px&wc=true&wa=false&pv=61px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21DOCTYPE%2520html%253E%250A%253Chtml%2520lang%253D%2522en%2522%2520dir%253D%2522ltr%2522%253E%250A%2520%2520%253Chead%253E%250A%2520%2520%2520%2520%253Cmeta%2520charset%253D%2522utf-8%2522%253E%250A%2520%2520%2520%2520%253Ctitle%253ECSS%2520Modal%253C%252Ftitle%253E%250A%2520%2520%2520%2520%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522.%252Fsrc%252Fstyle.css%2522%253E%250A%2520%2520%2520%2520%253Cscript%2520type%253D%2522text%252Fjavascript%2522%2520src%253D%2522.%252Fsrc%252Findex.js%2522%253E%253C%252Fscript%253E%250A%2520%2520%253C%252Fhead%253E%250A%2520%2520%250A%2520%2520%253Cbody%253E%2520%2520%250A%2520%2520%2520%2520%253Cbutton%2520id%253D%2522Big_Button%2522%2520type%253D%2522button%2522%2520name%253D%2522button%2522%253EPress%253Cbr%253EButton%253C%252Fbutton%253E%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cdiv%2520id%253D%2522Modal%2522%253EModal%253C%252Fdiv%253E%250A%2520%2520%253C%252Fbody%253E%250A%2520%2520%250A%253C%252Fhtml%253E"
+          style="position: relative; margin-top: 250px; left: calc(50% - 1024px/2); width: 1024px; height: 480px; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+          </iframe>
+          <div id="CSS_Label" class="Labels">CSS (Cascading Style Sheets)</div>
+          <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%2835%2C35%2C35%2C1%29&t=shades-of-purple&wt=none&l=css&ds=true&dsyoff=6px&dsblur=10px&wc=true&wa=false&pv=61px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=body%257B%250A%2520%2520background-color%253A%2520rgb%2835%252C35%252C35%29%253B%250A%257D%250A%250A%253Aroot%257B%250A%2520%2520--Size%253A%25206.5rem%253B%250A%257D%250A%250A%2523Big_Button%257B%250A%2520%2520position%253A%2520absolute%253B%250A%2520%2520height%253A%2520var%28--Size%29%253B%250A%2520%2520width%253A%2520var%28--Size%29%253B%250A%2520%2520top%253A%25205rem%253B%250A%2520%2520left%253A%2520calc%2825%2525%2520-%2520var%28--Size%29%252F2%29%253B%250A%2520%2520background-color%253A%2520rgb%2852%252C235%252C192%29%253B%250A%2520%2520border%253A%2520none%253B%250A%2520%2520border-radius%253A%25201rem%253B%250A%2520%2520font-family%253A%2520Helvetica%252C%2520Arial%252C%2520sans-serif%253B%250A%2520%2520font-size%253A%25201rem%253B%250A%2520%2520font-weight%253A%2520bold%253B%250A%2520%2520color%253A%2520rgba%280%252C0%252C0%252C0.5%29%253B%250A%2520%2520box-shadow%253A%2520inset%25201px%25201px%25202px%25200px%2520rgba%28255%252C255%252C255%252C0.9%29%253B%250A%2520%2520transition%253A%25200.2s%253B%250A%257D%250A%250A%2523Big_Button%253Ahover%257B%250A%2520%2520transform%253A%2520scale%281.05%29%253B%250A%2520%2520cursor%253A%2520pointer%253B%250A%257D%250A%250A%2523Big_Button.Light_Up%257B%250A%2520%2520color%253A%2520white%253B%250A%257D%250A%250A%2523Modal%257B%250A%2520%2520position%253A%2520absolute%253B%250A%2520%2520--Height%253A%252010rem%253B%250A%2520%2520--Width%253A%252018rem%253B%250A%2520%2520top%253A%2520calc%28-1*var%28--Height%29%29%253B%250A%2520%2520left%253A%2520calc%28%2825%2525%2520%252B%2520var%28--Size%29%252F2%2520%252B%2520100%2525%29%252F2%2520-%2520var%28--Width%29%252F2%29%253B%250A%2520%2520display%253A%2520flex%253B%250A%2520%2520justify-content%253A%2520center%253B%250A%2520%2520align-items%253A%2520center%253B%250A%2520%2520height%253A%2520var%28--Height%29%253B%250A%2520%2520width%253A%2520var%28--Width%29%253B%250A%2520%2520background-color%253A%2520gray%253B%250A%2520%2520border-radius%253A%25201rem%253B%250A%2520%2520font-family%253A%2520Helvetica%252C%2520Arial%252C%2520sans-serif%253B%250A%2520%2520font-size%253A%25201rem%253B%250A%2520%2520font-weight%253A%2520bold%253B%250A%2520%2520color%253A%2520rgba%280%252C0%252C0%252C0.5%29%253B%250A%2520%2520box-shadow%253A%2520inset%25201px%25201px%25202px%25200px%2520rgba%28255%252C255%252C255%252C0.35%29%253B%250A%257D%250A%250A.Slide_Up_Animation%257B%250A%2520%2520animation%253A%2520Slide_Modal_Keyframes%25200.3s%2520ease%2520forwards%253B%250A%2520%2520animation-direction%253A%2520reverse%253B%250A%257D%250A%250A.Slide_Down_Animation%257B%250A%2520%2520animation%253A%2520Slide_Modal_Keyframes%25200.3s%2520ease%2520forwards%253B%250A%2520%2520animation-direction%253A%2520normal%253B%250A%257D%250A%250A%2540keyframes%2520Slide_Modal_Keyframes%2520%257B%250A%2520%25200%2525%257Btransform%253A%2520translateY%280px%29%253B%2520opacity%253A%25200%253B%257D%250A%2520%252050%2525%257Btransform%253A%2520translateY%2815rem%29%2520scaleX%281.2%29%253B%2520opacity%253A%25200.7%253B%257D%250A%2520%2520100%2525%257Btransform%253A%2520translateY%2813.5rem%29%2520scaleX%281%29%253B%2520opacity%253A%25201%253B%257D%250A%257D"
+          style="position: relative; margin-top: -50px; left: calc(50% - 1024px/2); width: 1024px; height: 1900px; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+          </iframe>
+          <div id="JS_Label" class="Labels">JS (JavaScript)</div>
+          <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%2835%2C35%2C35%2C1%29&t=shades-of-purple&wt=none&l=javascript&ds=true&dsyoff=6px&dsblur=10px&wc=true&wa=false&pv=61px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=window.onload%2520%253D%2520function%28%29%257B%250Adocument.getElementById%28%27Big_Button%27%29.addEventListener%28%2522click%2522%252CMove_Modal%29%253B%2520%250A%257D%250A%250Afunction%2520Move_Modal%28%29%257B%250A%2520%2520let%2520Modal%2520%253D%2520document.getElementById%28%27Modal%27%29%253B%250A%2520%2520document.getElementById%28%2522Big_Button%2522%29.classList.toggle%28%2522Light_Up%2522%29%253B%250A%2520%2520%250A%2520%2520if%28Modal.classList.contains%28%27Slide_Down_Animation%27%29%29%257B%250A%2520%2520%2520%2520Modal.classList.remove%28%27Slide_Down_Animation%27%29%253B%250A%2520%2520%2520%2520void%2520Modal.offsetWidth%253B%250A%2520%2520%2520%2520Modal.classList.add%28%27Slide_Up_Animation%27%29%253B%250A%2520%2520%257Delse%257B%250A%2520%2520%2520%2520Modal.classList.remove%28%27Slide_Up_Animation%27%29%253B%250A%2520%2520%2520%2520void%2520Modal.offsetWidth%253B%250A%2520%2520%2520%2520Modal.classList.add%28%27Slide_Down_Animation%27%29%253B%250A%2520%2520%257D%2520%2520%250A%257D"
+          style="position: relative; margin-top: -510px; left: calc(50% - 1024px/2); width: 1024px; height: 600px; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+          </iframe>
+  
+  </body>
+</html>
+
+
