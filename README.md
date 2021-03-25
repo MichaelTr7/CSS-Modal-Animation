@@ -1,4 +1,4 @@
-# CSS-Modal-Animation
+# [CSS-Modal-Animation](https://michaeltr7.github.io/CSS-Modal-Animation/)
 A JavaScript triggered modal that slides in and out of the page. Notification like modal.
 
 <p align="center">
